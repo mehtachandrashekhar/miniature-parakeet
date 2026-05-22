@@ -75,7 +75,7 @@ export default function Home() {
             <button className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold transition-all transform hover:scale-105 shadow-[0_0_30px_rgba(37,99,235,0.3)]">
               Explore Projects
             </button>
-            <button className="px-8 py-4 glass hover:bg-white/10 text-white rounded-xl font-bold transition-all flex items-center gap-2">
+            <button className="px-8 py-4 glass hover:bg-gray-100 dark:hover:bg-white/10 text-black dark:text-white rounded-xl font-bold transition-all flex items-center gap-2 border border-gray-200 dark:border-white/10">
               <Download className="w-5 h-5" />
               Download Resume
             </button>
@@ -121,19 +121,19 @@ export default function Home() {
             <h3 className="text-2xl font-bold mb-2">CM.</h3>
             <p className="text-gray-500 text-sm">Building the future of automation.</p>
           </div>
-          <div className="flex gap-12 text-sm text-gray-400 font-medium">
+          <div className="flex gap-12 text-sm text-gray-500 dark:text-gray-400 font-medium">
             <div className="space-y-4">
-              <h4 className="text-white text-xs uppercase tracking-widest font-bold">Social</h4>
+              <h4 className="text-black dark:text-white text-xs uppercase tracking-widest font-bold">Social</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="hover:text-blue-400 transition-colors">LinkedIn</a></li>
-                <li><a href="#" className="hover:text-blue-400 transition-colors">GitHub</a></li>
+                <li><a href="#" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">LinkedIn</a></li>
+                <li><a href="#" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">GitHub</a></li>
               </ul>
             </div>
             <div className="space-y-4">
-              <h4 className="text-white text-xs uppercase tracking-widest font-bold">Inquiry</h4>
+              <h4 className="text-black dark:text-white text-xs uppercase tracking-widest font-bold">Inquiry</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="hover:text-blue-400 transition-colors">Contact</a></li>
-                <li><a href="#" className="hover:text-blue-400 transition-colors">Resume</a></li>
+                <li><a href="#" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact</a></li>
+                <li><a href="#" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Resume</a></li>
               </ul>
             </div>
           </div>
