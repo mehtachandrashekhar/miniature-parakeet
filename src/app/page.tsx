@@ -37,9 +37,12 @@ export default function Home() {
 
         <div className="flex items-center gap-2 md:gap-4">
           <div className="hidden md:block">
-            <button className="px-4 py-2 glass rounded-lg text-sm font-bold hover:bg-gray-100 dark:hover:bg-white/10 transition-all border border-gray-200 dark:border-white/10">
+            <a 
+              href="mailto:mehtachandrashekhar84@gmail.com"
+              className="px-4 py-2 glass rounded-lg text-sm font-bold hover:bg-gray-100 dark:hover:bg-white/10 transition-all border border-gray-200 dark:border-white/10"
+            >
               Contact
-            </button>
+            </a>
           </div>
           
           <div className="md:hidden flex items-center gap-2">
@@ -72,9 +75,12 @@ export default function Home() {
                   {link.name}
                 </a>
               ))}
-              <button className="w-full px-4 py-3 bg-blue-600 text-white rounded-xl font-bold shadow-lg">
+              <a 
+                href="mailto:mehtachandrashekhar84@gmail.com"
+                className="w-full px-4 py-3 bg-blue-600 text-white rounded-xl font-bold shadow-lg text-center"
+              >
                 Contact Me
-              </button>
+              </a>
             </motion.div>
           )}
         </AnimatePresence>
@@ -141,9 +147,9 @@ export default function Home() {
             transition={{ delay: 1.2 }}
             className="mt-12 md:mt-16 flex justify-center gap-8 text-gray-500"
           >
-            <a href="https://linkedin.com/in/chandrashekhar-mehta-303a91230/" target="_blank" className="hover:text-blue-400 transition-colors"><Linkedin size={20} /></a>
-            <a href="https://github.com/mehtachandrashekhar" target="_blank" className="hover:text-white transition-colors"><Github size={20} /></a>
-            <a href="mailto:mehtachandrashekhar84@gmail.com" className="hover:text-emerald-400 transition-colors"><Mail size={20} /></a>
+            <a href="https://linkedin.com/in/chandrashekhar-mehta-303a91230/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><Linkedin size={20} /></a>
+            <a href="https://github.com/mehtachandrashekhar" target="_blank" rel="noopener noreferrer" className="hover:text-black dark:hover:text-white transition-colors"><Github size={20} /></a>
+            <a href="mailto:mehtachandrashekhar84@gmail.com" className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"><Mail size={20} /></a>
           </motion.div>
         </div>
 
@@ -175,19 +181,20 @@ export default function Home() {
             <h3 className="text-2xl font-bold mb-2">CM.</h3>
             <p className="text-gray-500 text-sm">Building the future of automation.</p>
           </div>
-          <div className="flex gap-12 text-sm text-gray-500 dark:text-gray-400 font-medium">
+          <div className="flex gap-12 text-sm text-gray-500 dark:text-gray-400 font-medium text-center md:text-left">
             <div className="space-y-4">
               <h4 className="text-black dark:text-white text-xs uppercase tracking-widest font-bold">Social</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">LinkedIn</a></li>
-                <li><a href="#" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/chandrashekhar-mehta-303a91230/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">LinkedIn</a></li>
+                <li><a href="https://github.com/mehtachandrashekhar" target="_blank" rel="noopener noreferrer" className="hover:text-black dark:hover:text-white transition-colors">GitHub</a></li>
+                <li><a href="https://www.hackerrank.com/profile/mehtachandrashe1" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">HackerRank</a></li>
               </ul>
             </div>
             <div className="space-y-4">
               <h4 className="text-black dark:text-white text-xs uppercase tracking-widest font-bold">Inquiry</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact</a></li>
-                <li><a href="#" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Resume</a></li>
+                <li><a href="mailto:mehtachandrashekhar84@gmail.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact Email</a></li>
+                <li><a href="https://wa.me/919023379211" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">WhatsApp</a></li>
               </ul>
             </div>
           </div>

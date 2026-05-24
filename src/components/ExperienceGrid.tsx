@@ -76,7 +76,9 @@ const ExperienceGrid = () => {
                   <h3 className="text-xl md:text-2xl font-bold text-black dark:text-white mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">{exp.role}</h3>
                   <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400 font-medium text-sm">
                     <Globe className="w-4 h-4" />
-                    {exp.company}
+                    <a href="https://delphianalytics.ai/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                      {exp.company}
+                    </a>
                   </div>
                 </div>
                 <div className="p-2 md:p-3 bg-blue-500/10 rounded-xl text-blue-600 dark:text-blue-400">
