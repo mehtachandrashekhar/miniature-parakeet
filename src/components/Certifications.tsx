@@ -141,7 +141,7 @@ const Certifications = () => {
         </div>
         <div className="flex-grow text-center md:text-left">
           <h4 className="text-xl font-bold text-black dark:text-white">Bachelor of Engineering in Computer Engineering</h4>
-          <p className="text-gray-500 dark:text-gray-400">S.P.B. Patel Engineering College • 2021 — 2024</p>
+          <p className="text-gray-500 dark:text-gray-400">S.P.B. Patel Engineering College • 2021 — 2025</p>
         </div>
         <div className="px-4 py-2 bg-blue-600 text-white rounded-xl font-bold text-sm">
           Completed
