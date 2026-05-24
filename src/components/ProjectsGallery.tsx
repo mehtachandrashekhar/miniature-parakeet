@@ -45,8 +45,8 @@ const projects = [
 
 const ProjectsGallery = () => {
   return (
-    <section className="py-24 px-6 max-w-6xl mx-auto" id="projects">
-      <div className="text-center mb-20">
+    <section className="py-16 md:py-24 px-6 max-w-6xl mx-auto" id="projects">
+      <div className="text-center mb-12 md:mb-20">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -54,15 +54,15 @@ const ProjectsGallery = () => {
         >
           Selected Works
         </motion.div>
-        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-black dark:text-white">
+        <h2 className="text-3xl md:text-5xl font-bold mb-6 text-black dark:text-white">
           Solutions That <span className="text-blue-600 dark:text-blue-500">Scale</span>
         </h2>
-        <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+        <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-sm md:text-base">
           Deep dives into architectural thinking and the tangible business impact of automated engineering.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         {projects.map((project, index) => (
           <motion.div
             key={index}
@@ -73,33 +73,33 @@ const ProjectsGallery = () => {
           >
             <div className={`absolute -inset-0.5 bg-gradient-to-r ${project.color} rounded-3xl blur opacity-0 group-hover:opacity-10 transition duration-500`} />
             
-            <div className="relative h-full glass p-8 rounded-3xl border-gray-200 dark:border-gray-800/50 flex flex-col">
-              <div className="flex justify-between items-start mb-8">
-                <div className={`p-4 bg-gradient-to-br ${project.color} bg-opacity-10 rounded-2xl text-white shadow-lg`}>
-                  {project.icon}
+            <div className="relative h-full glass p-6 md:p-8 rounded-3xl border-gray-200 dark:border-gray-800/50 flex flex-col">
+              <div className="flex justify-between items-start mb-6 md:mb-8">
+                <div className={`p-3 md:p-4 bg-gradient-to-br ${project.color} bg-opacity-10 rounded-2xl text-white shadow-lg`}>
+                  {React.cloneElement(project.icon as React.ReactElement, { className: "w-5 h-5 md:w-6 md:h-6" })}
                 </div>
-                <div className="flex gap-4 text-gray-400 dark:text-gray-500">
-                  <button className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><Github className="w-5 h-5" /></button>
-                  <button className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><ExternalLink className="w-5 h-5" /></button>
+                <div className="flex gap-3 md:gap-4 text-gray-400 dark:text-gray-500">
+                  <button className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><Github className="w-4 h-4 md:w-5 md:h-5" /></button>
+                  <button className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><ExternalLink className="w-4 h-4 md:w-5 md:h-5" /></button>
                 </div>
               </div>
 
-              <h3 className="text-2xl font-bold text-black dark:text-white mb-4 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">{project.title}</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-black dark:text-white mb-4 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">{project.title}</h3>
               
-              <div className="space-y-4 flex-grow mb-8">
+              <div className="space-y-4 flex-grow mb-6 md:mb-8">
                 <div>
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-blue-600 dark:text-blue-500 block mb-1">The Problem</span>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{project.problem}</p>
+                  <span className="text-[9px] md:text-[10px] font-bold uppercase tracking-widest text-blue-600 dark:text-blue-500 block mb-1">The Problem</span>
+                  <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{project.problem}</p>
                 </div>
                 <div>
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-emerald-600 dark:text-emerald-500 block mb-1">Impact</span>
-                  <p className="text-sm text-gray-800 dark:text-gray-300 font-medium leading-relaxed">{project.impact}</p>
+                  <span className="text-[9px] md:text-[10px] font-bold uppercase tracking-widest text-emerald-600 dark:text-emerald-500 block mb-1">Impact</span>
+                  <p className="text-xs md:text-sm text-gray-800 dark:text-gray-300 font-medium leading-relaxed">{project.impact}</p>
                 </div>
               </div>
 
-              <div className="flex flex-wrap gap-2 pt-6 border-t border-gray-100 dark:border-white/5">
+              <div className="flex flex-wrap gap-2 pt-4 md:pt-6 border-t border-gray-100 dark:border-white/5">
                 {project.tech.map((t, i) => (
-                  <span key={i} className="text-[10px] font-mono px-2 py-1 bg-gray-50 dark:bg-white/5 rounded text-gray-500 border border-gray-200 dark:border-white/5">
+                  <span key={i} className="text-[9px] md:text-[10px] font-mono px-2 py-1 bg-gray-50 dark:bg-white/5 rounded text-gray-500 border border-gray-200 dark:border-white/5">
                     {t}
                   </span>
                 ))}
