@@ -16,45 +16,44 @@ import {
 
 const techStack = [
   {
-    category: "DevOps & CI/CD",
+    category: "DevOps & Platform Engineering",
     icon: <Settings2 className="w-6 h-6" />,
     skills: [
-      { name: "Jenkins", level: 90 },
-      { name: "GitLab CI", level: 85 },
-      { name: "Docker", level: 85 },
-      { name: "Groovy", level: 80 },
-      { name: "Nginx", level: 85 }
+      { name: "Jenkins (Pipeline as Code)", level: 95 },
+      { name: "GitLab CI / GitHub Actions", level: 90 },
+      { name: "Terraform (IaC)", level: 85 },
+      { name: "Docker & Containerization", level: 90 },
+      { name: "Kubernetes (EKS/Basics)", level: 75 }
     ]
   },
   {
-    category: "Cloud & Infrastructure",
+    category: "Cloud & Linux Infrastructure",
     icon: <Cloud className="w-6 h-6" />,
     skills: [
-      { name: "AWS (EC2, S3, RDS)", level: 80 },
-      { name: "GCP", level: 75 },
-      { name: "CloudStack", level: 70 },
-      { name: "Linux Administration", level: 90 }
+      { name: "AWS (VPC, RDS, S3, EC2)", level: 90 },
+      { name: "Linux Systems (Ubuntu, CentOS)", level: 95 },
+      { name: "Nginx & Reverse Proxies", level: 85 },
+      { name: "SSH Hardening & Security", level: 80 }
     ]
   },
   {
-    category: "Data Engineering & BI",
-    icon: <Database className="w-6 h-6" />,
+    category: "Monitoring & Reliability",
+    icon: <BarChart3 className="w-6 h-6" />,
     skills: [
-      { name: "Apache Airflow", level: 80 },
-      { name: "PostgreSQL", level: 85 },
-      { name: "ClickHouse", level: 75 },
-      { name: "Grafana / Superset", level: 85 },
-      { name: "Redash", level: 80 }
+      { name: "Prometheus & Grafana", level: 90 },
+      { name: "Incident Response & RCA", level: 85 },
+      { name: "Node-Exporter / Alerting", level: 80 },
+      { name: "Systemd Service Management", level: 90 }
     ]
   },
   {
-    category: "Programming & Automation",
+    category: "Systems Automation & Scripting",
     icon: <Code2 className="w-6 h-6" />,
     skills: [
-      { name: "Python", level: 85 },
-      { name: "FastAPI", level: 80 },
-      { name: "Bash Scripting", level: 90 },
-      { name: "Selenium", level: 80 }
+      { name: "Bash Scripting", level: 95 },
+      { name: "Python (Automation/FastAPI)", level: 85 },
+      { name: "Groovy (Jenkins Libraries)", level: 85 },
+      { name: "Automation APIs (ZeroSSL)", level: 80 }
     ]
   }
 ];

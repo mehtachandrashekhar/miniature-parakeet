@@ -15,11 +15,11 @@ const projects = [
     color: "from-blue-500 to-cyan-500"
   },
   {
-    title: "Limese Enterprise Infrastructure",
-    problem: "Need for a scalable, high-availability data environment for multi-service operations.",
-    solution: "Full-stack infrastructure provisioning: Database, Airflow, and BI Tool servers with S3 storage.",
-    impact: "100% on-schedule provisioning with optimized resource allocation.",
-    tech: ["AWS", "Airflow", "PostgreSQL", "Superset", "Metabase"],
+    title: "Enterprise CI/CD & IaC Platform",
+    problem: "Inconsistent environments and slow manual deployments causing production friction.",
+    solution: "Designed end-to-end CI/CD with Jenkins & Kubernetes, using Terraform for IaC provisioning.",
+    impact: "93% Faster deployments. 0 downtime releases. Increased frequency from weekly to 5+/day.",
+    tech: ["Jenkins", "Terraform", "Kubernetes", "Docker", "AWS"],
     icon: <Layers className="w-6 h-6" />,
     color: "from-purple-500 to-pink-500"
   },

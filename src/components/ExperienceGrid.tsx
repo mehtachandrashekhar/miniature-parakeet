@@ -7,29 +7,29 @@ import { Briefcase, ExternalLink, ShieldCheck, Zap, BarChart3, Globe } from "luc
 const experiences = [
   {
     company: "Delphi Analytics",
-    role: "DevOps Engineer",
+    role: "Lead DevOps Engineer",
     period: "2023 - Present",
-    impact: "90% Reduction in manual effort via SSL automation",
-    description: "Leading core infrastructure and security initiatives for high-traffic analytics platforms.",
+    impact: "93% Faster deployment frequency via CI/CD automation",
+    description: "Orchestrating platform reliability, security hardening, and high-availability infrastructure.",
     details: [
-      "Architected end-to-end SSL renewal systems using ZeroSSL & Certbot.",
-      "Optimized GitLab SSH performance by 98% (20m to 2s latency reduction).",
-      "Deployed scalable infrastructure for Limese (DB, Airflow, Superset)."
+      "Architected Jenkins shared libraries reducing pipeline duplication by 40%.",
+      "Automated infrastructure provisioning using Terraform for VPC, RDS, and EKS.",
+      "Resolved mission-critical system latencies through deep-dive RCA and service optimization."
     ],
-    tags: ["Infrastructure", "Security", "Scale"]
+    tags: ["Platform Engineering", "IaC", "Reliability"]
   },
   {
     company: "Delphi Analytics",
-    role: "Automation Architect",
-    period: "2025",
-    impact: "70% Faster login with OAuth 2.0 Integration",
-    description: "Built intelligent microservices to automate internal workflows and billing ecosystems.",
+    role: "Systems Automation Architect",
+    period: "2023",
+    impact: "100% Automated SSL lifecycle management",
+    description: "Engineered high-signal automation microservices and security-first integrations.",
     details: [
-      "Engineered automated account provisioning with FastAPI & ClickHouse.",
-      "Integrated secure billing dashboards with JWT-based isolation.",
-      "Configured enterprise VPN solutions for secure remote operations."
+      "Automated end-to-end SSL renewal reducing manual intervention by 90%.",
+      "Unified enterprise identity through OAuth 2.0 and JWT-based security.",
+      "Hardened Linux environments and SSH access protocols across production fleets."
     ],
-    tags: ["Automation", "FastAPI", "OAuth 2.0"]
+    tags: ["Automation", "Security", "Identity"]
   }
 ];
 
