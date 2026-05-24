@@ -72,9 +72,12 @@ export default function Home() {
             transition={{ duration: 0.7, delay: 0.6 }}
             className="flex flex-wrap items-center justify-center gap-4"
           >
-            <button className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold transition-all transform hover:scale-105 shadow-[0_0_30px_rgba(37,99,235,0.3)]">
+            <a 
+              href="#projects" 
+              className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold transition-all transform hover:scale-105 shadow-[0_0_30px_rgba(37,99,235,0.3)] inline-block"
+            >
               Explore Projects
-            </button>
+            </a>
             <button className="px-8 py-4 glass hover:bg-gray-100 dark:hover:bg-white/10 text-black dark:text-white rounded-xl font-bold transition-all flex items-center gap-2 border border-gray-200 dark:border-white/10">
               <Download className="w-5 h-5" />
               Download Resume
