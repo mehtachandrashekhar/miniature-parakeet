@@ -7,7 +7,7 @@ import { Briefcase, ExternalLink, ShieldCheck, Zap, BarChart3, Globe } from "luc
 const experiences = [
   {
     company: "Delphi Analytics",
-    role: "Lead DevOps Engineer",
+    role: "DevOps Engineer",
     period: "2023 - Present",
     impact: "93% Faster deployment frequency via CI/CD automation",
     description: "Orchestrating platform reliability, security hardening, and high-availability infrastructure.",

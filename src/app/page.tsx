@@ -7,7 +7,7 @@ import ProjectsGallery from "@/components/ProjectsGallery";
 import TechStack from "@/components/TechStack";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, Download, Linkedin, Github, Mail, Menu, X } from "lucide-react";
+import { ChevronDown, Download, Linkedin, Github, Mail, Menu, X, BookOpen } from "lucide-react";
 import { useState } from "react";
 
 export default function Home() {
@@ -103,7 +103,7 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className="inline-block mb-6 px-4 py-1.5 glass rounded-full text-blue-600 dark:text-blue-400 text-xs md:text-sm font-medium tracking-wide uppercase"
           >
-            Senior DevOps & Automation Architect
+            DevOps Engineer & Automation Architect
           </motion.div>
           
           <motion.h1
@@ -151,6 +151,7 @@ export default function Home() {
           >
             <a href="https://linkedin.com/in/chandrashekhar-mehta-303a91230/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><Linkedin size={20} /></a>
             <a href="https://github.com/mehtachandrashekhar" target="_blank" rel="noopener noreferrer" className="hover:text-black dark:hover:text-white transition-colors"><Github size={20} /></a>
+            <a href="https://dev.to/chandrashekhar" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"><BookOpen size={20} /></a>
             <a href="mailto:mehtachandrashekhar84@gmail.com" className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"><Mail size={20} /></a>
           </motion.div>
         </div>
@@ -192,6 +193,7 @@ export default function Home() {
               <ul className="space-y-2">
                 <li><a href="https://linkedin.com/in/chandrashekhar-mehta-303a91230/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">LinkedIn</a></li>
                 <li><a href="https://github.com/mehtachandrashekhar" target="_blank" rel="noopener noreferrer" className="hover:text-black dark:hover:text-white transition-colors">GitHub</a></li>
+                <li><a href="https://dev.to/chandrashekhar" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">Dev.to Blog</a></li>
                 <li><a href="https://www.hackerrank.com/profile/mehtachandrashe1" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">HackerRank</a></li>
               </ul>
             </div>
