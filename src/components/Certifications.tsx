@@ -9,7 +9,7 @@ const certifications = [
     title: "DevOps Foundation",
     issuer: "iNeuron.ai",
     date: "2024",
-    link: "https://learn.ineuron.ai/certificate/e7036e70-ed6a-4848-bbfb-d16da1c444bd",
+    link: "https://drive.google.com/file/d/1ag6PHL6eHS4OaRax86niTOfL9F9dcQs9/view?usp=sharing",
     icon: <Award className="w-5 h-5 text-blue-500" />,
     category: "DevOps"
   },
