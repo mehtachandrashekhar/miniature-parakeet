@@ -1,6 +1,7 @@
 "use client";
 
 import AboutMe from "@/components/AboutMe";
+import Certifications from "@/components/Certifications";
 import ExperienceGrid from "@/components/ExperienceGrid";
 import ProjectsGallery from "@/components/ProjectsGallery";
 import TechStack from "@/components/TechStack";
@@ -16,6 +17,7 @@ export default function Home() {
     { name: "About", href: "#about" },
     { name: "Impact", href: "#experience" },
     { name: "Stack", href: "#tech-stack" },
+    { name: "Certifications", href: "#certifications" },
     { name: "Work", href: "#projects" },
   ];
 
@@ -170,6 +172,9 @@ export default function Home() {
 
       {/* Tech Stack */}
       <TechStack />
+
+      {/* Certifications */}
+      <Certifications />
 
       {/* Projects Gallery */}
       <ProjectsGallery />
