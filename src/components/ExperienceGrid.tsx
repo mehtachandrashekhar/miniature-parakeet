@@ -8,7 +8,7 @@ const experiences = [
   {
     company: "Delphi Analytics",
     role: "DevOps Engineer",
-    period: "2023 - Present",
+    period: "Jul 2025 - Jul 2026",
     impact: "93% Faster deployment frequency via CI/CD automation",
     description: "Orchestrating platform reliability, security hardening, and high-availability infrastructure.",
     details: [
@@ -20,8 +20,8 @@ const experiences = [
   },
   {
     company: "Delphi Analytics",
-    role: "Systems Automation Architect",
-    period: "2023",
+    role: "Intern",
+    period: "Jan 2025 - Jul 2025",
     impact: "100% Automated SSL lifecycle management",
     description: "Engineered high-signal automation microservices and security-first integrations.",
     details: [

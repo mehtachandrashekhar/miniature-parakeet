@@ -4,8 +4,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { 
   Server, 
-  Database, 
-  Terminal, 
   Cloud, 
   BarChart3, 
   Settings2, 
@@ -19,41 +17,41 @@ const techStack = [
     category: "DevOps & Platform Engineering",
     icon: <Settings2 className="w-6 h-6" />,
     skills: [
-      { name: "Jenkins (Pipeline as Code)", level: 95 },
-      { name: "GitLab CI / GitHub Actions", level: 90 },
-      { name: "Terraform (IaC)", level: 85 },
-      { name: "Docker & Containerization", level: 90 },
-      { name: "Kubernetes (EKS/Basics)", level: 75 }
+      "Jenkins (Pipeline as Code)",
+      "GitLab CI / GitHub Actions",
+      "Terraform (IaC)",
+      "Docker & Containerization",
+      "Kubernetes (EKS/Basics)"
     ]
   },
   {
     category: "Cloud & Linux Infrastructure",
     icon: <Cloud className="w-6 h-6" />,
     skills: [
-      { name: "AWS (VPC, RDS, S3, EC2)", level: 90 },
-      { name: "Linux Systems (Ubuntu, CentOS)", level: 95 },
-      { name: "Nginx & Reverse Proxies", level: 85 },
-      { name: "SSH Hardening & Security", level: 80 }
+      "AWS (VPC, RDS, S3, EC2)",
+      "Linux Systems (Ubuntu, CentOS)",
+      "Nginx & Reverse Proxies",
+      "SSH Hardening & Security"
     ]
   },
   {
     category: "Monitoring & Reliability",
     icon: <BarChart3 className="w-6 h-6" />,
     skills: [
-      { name: "Prometheus & Grafana", level: 90 },
-      { name: "Incident Response & RCA", level: 85 },
-      { name: "Node-Exporter / Alerting", level: 80 },
-      { name: "Systemd Service Management", level: 90 }
+      "Prometheus & Grafana",
+      "Incident Response & RCA",
+      "Node-Exporter / Alerting",
+      "Systemd Service Management"
     ]
   },
   {
     category: "Systems Automation & Scripting",
     icon: <Code2 className="w-6 h-6" />,
     skills: [
-      { name: "Bash Scripting", level: 95 },
-      { name: "Python (Automation/FastAPI)", level: 85 },
-      { name: "Groovy (Jenkins Libraries)", level: 85 },
-      { name: "Automation APIs (ZeroSSL)", level: 80 }
+      "Bash Scripting",
+      "Python (Automation/FastAPI)",
+      "Groovy (Jenkins Libraries)",
+      "Automation APIs (ZeroSSL)"
     ]
   }
 ];
@@ -97,22 +95,17 @@ const TechStack = () => {
               <h3 className="text-xl md:text-2xl font-bold text-black dark:text-white">{group.category}</h3>
             </div>
 
-            <div className="space-y-4 md:space-y-6">
+            <div className="flex flex-wrap gap-2">
               {group.skills.map((skill, skillIndex) => (
-                <div key={skillIndex}>
-                  <div className="flex justify-between mb-2">
-                    <span className="text-xs md:text-sm font-medium text-gray-700 dark:text-gray-300">{skill.name}</span>
-                    <span className="text-[10px] md:text-xs text-blue-600 dark:text-blue-400 font-mono">{skill.level}%</span>
-                  </div>
-                  <div className="h-1.5 w-full bg-gray-100 dark:bg-gray-900 rounded-full overflow-hidden">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${skill.level}%` }}
-                      transition={{ duration: 1, delay: 0.5 + (skillIndex * 0.1) }}
-                      className="h-full bg-gradient-to-r from-blue-700 to-blue-500 rounded-full"
-                    />
-                  </div>
-                </div>
+                <motion.span
+                  key={skillIndex}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.3, delay: skillIndex * 0.05 }}
+                  className="px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-600 dark:text-blue-400 text-xs md:text-sm font-medium"
+                >
+                  {skill}
+                </motion.span>
               ))}
             </div>
           </motion.div>

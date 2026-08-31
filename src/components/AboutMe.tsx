@@ -24,7 +24,7 @@ const AboutMe = () => {
               I am a <span className="text-black dark:text-white font-medium">DevOps Engineer & Automation Architect</span> with a passion for transforming complex, manual workflows into streamlined, high-performance digital ecosystems.
             </p>
             <p>
-              At <a href="https://delphianalytics.ai/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 font-medium underline decoration-blue-600/30 underline-offset-4 hover:decoration-blue-600 transition-all">Delphi Analytics</a>, I've spent the last year engineering resilient infrastructure and intelligent automation platforms. My approach combines deep technical expertise with a sharp focus on business outcomes—ensuring every system I build is not just fast, but scalable and secure.
+              At <a href="https://delphianalytics.ai/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 font-medium underline decoration-blue-600/30 underline-offset-4 hover:decoration-blue-600 transition-all">Delphi Analytics</a>, I spent over a year engineering resilient infrastructure and intelligent automation platforms. My approach combines deep technical expertise with a sharp focus on business outcomes—ensuring every system I build is not just fast, but scalable and secure.
             </p>
             <p>
               Whether it's optimizing CI/CD pipelines to reduce deployment times by 90% or architecting complex data environments from the ground up, I thrive at the intersection of <span className="text-black dark:text-white font-medium">engineering excellence and strategic impact</span>.
