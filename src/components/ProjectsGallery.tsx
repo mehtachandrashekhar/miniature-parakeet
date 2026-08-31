@@ -24,7 +24,7 @@ const projects = [
     color: "from-purple-500 to-pink-500"
   },
   {
-    title: "Damensch Monitoring Ecosystem",
+    title: "E-Com Monitoring Ecosystem",
     problem: "Lack of visibility into real-time performance leading to slow incident response.",
     solution: "Enterprise monitoring suite using Grafana and Node-Exporter for real-time tracking.",
     impact: "40% Reduction in resolution time. 99.9% tracking accuracy.",
