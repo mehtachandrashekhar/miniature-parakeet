@@ -2,10 +2,18 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Award, ExternalLink, ShieldCheck, Cloud, Code, GraduationCap, Star } from "lucide-react";
-import Script from "next/script";
+import { Award, ExternalLink, ShieldCheck, Cloud, Code, GraduationCap, Star, Terminal } from "lucide-react";
 
 const certifications = [
+  {
+    title: "LFS101: Introduction to Linux",
+    issuer: "The Linux Foundation",
+    date: "2026",
+    link: "https://www.credly.com/badges/cb86c518-5045-4ca3-88b6-d9dd2a499ea4",
+    icon: <Terminal className="w-5 h-5 text-orange-500" />,
+    category: "Linux",
+    featured: true
+  },
   {
     title: "DevOps Foundation",
     issuer: "iNeuron.ai",
@@ -91,7 +99,7 @@ const Certifications = () => {
           Professional <span className="text-blue-600 dark:text-blue-500">Certifications</span>
         </motion.h2>
         <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-          Continuous learning and verified expertise in DevOps, Cloud Infrastructure, and Information Security.
+          Continuous learning and verified expertise in Linux, DevOps, Cloud Infrastructure, and Information Security.
         </p>
       </div>
 
@@ -117,6 +125,11 @@ const Certifications = () => {
                 </div>
                 <h3 className="font-bold text-black dark:text-white leading-tight mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                   {cert.title}
+                  {cert.featured && (
+                    <span className="ml-2 inline-block align-middle text-[9px] font-bold uppercase tracking-widest px-1.5 py-0.5 bg-blue-600 text-white rounded">
+                      New
+                    </span>
+                  )}
                 </h3>
                 <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">{cert.issuer}</p>
               </div>
@@ -148,12 +161,6 @@ const Certifications = () => {
           Completed
         </div>
       </motion.div>
-
-      {/* Credly Badge */}
-      <div className="mt-12 flex justify-center">
-        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="cb86c518-5045-4ca3-88b6-d9dd2a499ea4" data-share-badge-host="https://www.credly.com"></div>
-        <Script src="https://cdn.credly.com/assets/utilities/embed.js" />
-      </div>
     </section>
   );
 };
