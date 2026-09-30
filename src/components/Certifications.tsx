@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Award, ExternalLink, ShieldCheck, Cloud, Code, GraduationCap, Star } from "lucide-react";
+import Script from "next/script";
 
 const certifications = [
   {
@@ -146,6 +147,16 @@ const Certifications = () => {
         <div className="px-4 py-2 bg-blue-600 text-white rounded-xl font-bold text-sm">
           Completed
         </div>
+      </motion.div>
+
+      {/* Credly Badge */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        className="mt-12 flex justify-center"
+      >
+        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="cb86c518-5045-4ca3-88b6-d9dd2a499ea4" data-share-badge-host="https://www.credly.com"></div>
+        <Script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js" strategy="lazyOnload" />
       </motion.div>
     </section>
   );
