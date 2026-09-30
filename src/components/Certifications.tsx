@@ -150,14 +150,10 @@ const Certifications = () => {
       </motion.div>
 
       {/* Credly Badge */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        className="mt-12 flex justify-center"
-      >
+      <div className="mt-12 flex justify-center">
         <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="cb86c518-5045-4ca3-88b6-d9dd2a499ea4" data-share-badge-host="https://www.credly.com"></div>
-        <Script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js" strategy="lazyOnload" />
-      </motion.div>
+        <Script src="https://cdn.credly.com/assets/utilities/embed.js" />
+      </div>
     </section>
   );
 };
